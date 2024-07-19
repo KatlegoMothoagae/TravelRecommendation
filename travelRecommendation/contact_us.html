@@ -1,10 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Travel Site</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-$END$
+<header>
+    <nav>
+        <div id="title-icon">
+            <img id="nav-icon" src="icons/plane-svgrepo-com.svg" alt="plane">
+            <h3>TravelBloom</h3>
+        </div>
+        <div id="links">
+            <a href="travel_recommendation.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="contact_us.html">Contact Us</a>
+        </div>
+    </nav>
+</header>
+<main>
+
+    <div id="contact-container">
+        <div id="side_icons">
+            <img src="icons/instagram-svgrepo-com.svg" alt="instagram icon">
+            <img src="icons/facebook-svgrepo-com.svg" alt="facebook icon">
+            <img src="icons/twitter-154-svgrepo-com.svg" alt="twitter icon">
+            <img src="icons/youtube-168-svgrepo-com.svg" alt="youtube icon">
+        </div>
+        <div id="contact-content">
+            <div id="Contact-us">
+                <h1>
+                    CONTACT US
+                </h1>
+                <p>get in touch</p>
+            </div>
+            <div id="form-container">
+                <form>
+                    <label for="name">
+                        Name
+                        <input type="text" placeholder="Name" alt="name input" id="name" required>
+                    </label>
+                    <label for="email">
+                        Email
+                        <input type="email" placeholder="Email" alt="name input" id="email">
+                    </label>
+                    <label for="message">
+                        Message
+                        <textarea id="message"></textarea>
+                        <!--                            <textarea placeholder="Type your message ..." alt="name input" id="message">-->
+                    </label>
+                    <label for="submit">
+                        <input type="button" placeholder="Name" alt="name input" value="submit" id="submit">
+                    </label>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</main>
 </body>
 </html>
