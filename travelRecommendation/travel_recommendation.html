@@ -5,23 +5,46 @@
     <title>Title</title>
 </head>
 <body>
-<header>
-    <nav>
-        <div id="title-icon">
-            <img id="nav-icon" src="icons/plane-svgrepo-com.svg" alt="plane">
-            <h3 id="title-text">TravelBloom</h3>
+    <header>
+        <nav>
+            <div id="title-icon">
+                <img id="nav-icon" src="icons/plane-svgrepo-com.svg" alt="plane">
+                <h3 id="title-text">TravelBloom</h3>
+            </div>
+            <div id="links">
+                <a href="travel_recommendation.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="contact_us.html">Contact Us</a>
+            </div>
+            <div id="nav-inputs">
+                <label for="input-field"></label><input id="input-field" type="search" placeholder="Enter a destination or keyword">
+                <button class="button" onclick="addStuff()" id="searchInput">Search</button>
+                <button class="button" onclick="clearSearch()">Clear</button>
+            </div>
+        </nav>
+    </header>
+    <main id="main-page">
+        <div id="contact-container">
+            <div id="side_icons">
+                <!--            <div style="border-left:5px solid black;height:300px; padding-bottom: "></div>-->
+                <img src="icons/instagram-svgrepo-com.svg" alt="instagram icon">
+                <img src="icons/facebook-svgrepo-com.svg" alt="facebook icon">
+                <img src="icons/twitter-154-svgrepo-com.svg" alt="twitter icon">
+                <img src="icons/youtube-168-svgrepo-com.svg" alt="youtube icon">
+            </div>
+            <div id="home-page">
+
+                <div id="header-container">
+                    <h1>Explore Dream Destination</h1>
+                </div>
+                <div id="text-container">
+                    <p>it encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder</p>
+                </div>
+                <div>  <input type="button" value="BOOK NOW" id="book-now">
+                </div>
+            </div>
         </div>
-        <div id="links">
-            <a href="travel_recommendation.html">Home</a>
-            <a href="about_us.html">About Us</a>
-            <a href="contact_us.html">Contact Us</a>
-        </div>
-        <div id="nav-inputs">
-            <label for="input-field"></label><input id="input-field" type="search" placeholder="Enter a destination or keyword">
-            <button class="button" onclick="addStuff()" id="searchInput">Search</button>
-            <button class="button" onclick="clearSearch()">Clear</button>
-        </div>
-    </nav>
-</header>
+    </main>
+    <script src="travel_recommendation.js"></script>
 </body>
 </html>
